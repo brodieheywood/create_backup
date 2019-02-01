@@ -1,10 +1,10 @@
 from unittest import TestCase
-from comp_1510_a2 import q03
+from create_backup import main
 
 
 class TestBackup(TestCase):
     def test_backup(self):
-        q03.backup('backup_test.txt')
+        main.backup('backup_test.txt')
         with open('backup_test.txt', 'r') as file:
             ob = file.read()
 
